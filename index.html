@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Салон красоты | Главная</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Добро пожаловать в Кератин Люкс</h1>
+  <script src="script.js"></script>
+</body>
+</html>
+    <!-- Хедер -->
+    <header class="header">
+        <div class="logo">Salon</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Главный блок (Hero) -->
+    <header class="hero-dark">
+        <div class="hero-content">
+            <h1>Кератин Люкс</h1>
+            <p>Идеальное преображение для ваших волос</p>
+            <a href="#services" class="btn-outline">Узнать больше</a>
+            <div class="main-block">
+                
+            </div>
+        </div>
+    </header>
+    <section id="services">
+        <h2>Наши услуги</h2>
+        <div class="services-container">
+            
+            <div class="service-card">
+                <img src="./11.jpg" alt="Кератиновое выпрямление">
+                <div class="service-info">
+                    <h3>Кератиновое выпрямление</h3>
+                    <p>Сделайте волосы гладкими и блестящими на долго.</p>
+                    <button onclick="toggleText()">Подробнее</button> 
+                    
+                    </div>
+            </div>
+    
+            <div class="service-card">
+                <img src="./111.jpg" alt="Окрашивание волос">
+                <div class="service-info">
+                    <h3>Окрашивание волос</h3>
+                    <p>Создайте уникальный стиль с профессиональным окрашиванием.</p>
+                    <button class="open-modal" data-title="Окрашивание волос" data-desc="Профессиональное окрашивание волос с использованием лучших красителей.">Подробнее</button>
+                </div>
+            </div>
+    
+            <div class="service-card">
+                <img src="./1111.jpg" alt="Маникюр и педикюр">
+                <div class="service-info">
+                    <h3>Маникюр и педикюр</h3>
+                    <p>Красивые ногти для любого случая.</p>
+                    <button class="open-modal" data-title="Маникюр и педикюр" data-desc="Идеальный уход за ногтями, широкий выбор дизайна и SPA-процедуры.">Подробнее</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+    <!-- Модальное окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    <section id="about">
+        <div class="about-container">
+            <!-- Левая часть с текстом -->
+            <div class="about-text">
+                <h2>О нас</h2>
+                <p>Добро пожаловать в <strong>Кератин Люкс</strong> — ваш салон красоты премиум-класса.</p>
+                <p>Мы верим, что каждая женщина достойна роскошного ухода, поэтому предлагаем *профессиональные услуги по уходу за волосами, маникюр, педикюр и косметологию*.</p>
+                <p>Наша команда — это сертифицированные мастера с многолетним опытом, которые используют только *премиальные бренды косметики*.</p>
+                
+                <div class="quote">
+                    <p>“Красота начинается с заботы о себе.”</p>
+                    <span>— Команда Кератин Люкс</span>
+                </div>
+            </div>
+    <section id="interior">
+    <div class="container">
+        <h2>Интерьер салона</h2>
+        <p>Погрузитесь в атмосферу роскоши и уюта. Наш салон сочетает элегантность и комфорт, создавая идеальное пространство для отдыха и красоты.</p>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./12.jpg" alt="Зона ожидания">
+            </div>
+            <div class="gallery-item">
+                <img src="./13.jpg" alt="Зал с зеркалами">
+            </div>
+            <div class="gallery-item">
+                <img src="./14.jpg" alt="Процедурная комната">
+            </div>
+        </div>
+    </div>
+    </section>
+
+    
+    <!-- Всплывающее окно для подробной информации -->
+    <div id="service-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+    
+    <section id="masters">
+        <div class="container">
+            <h2>Наши мастера</h2>
+            <p>Профессионалы с многолетним опытом, которые помогут вам подчеркнуть вашу красоту.</p>
+            
+            <div class="masters-grid">
+                <div class="master-card" onclick="openModal('anna')">
+                    <div class="master-img">
+                        <img src="./22.jpg" alt="Анна Иванова">
+                    </div>
+                    <h3>Анна Иванова</h3>
+                    <p>Стилист-колорист</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="master-card" onclick="openModal('elena')">
+                    <div class="master-img">
+                        <img src="./23.jpg" alt="Елена Смирнова">
+                    </div>
+                    <h3>Елена Смирнова</h3>
+                    <p>Мастер по маникюру</p>
+                    <button>Подробнее</button>
+                </div>
+                <div class="master-card" onclick="openModal('olga')">
+                    <div class="master-img">
+                        <img src="./24.jpg" alt="Ольга Петрова">
+                    </div>
+                    <h3>Ольга Петрова</h3>
+                    <p>Косметолог</p>
+                    <button>Подробнее</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Всплывающее окно -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    
+    
+    <!-- Контакты -->
+    <section id="contacts" class="contacts-dark">
+        <h2>Контакты</h2>
+        <p>Свяжитесь с нами для записи или консультации</p>
+        
+        <div class="contact-info">
+            <div class="contact-item">
+                <h3>📞 Телефон</h3>
+                <p>+996(998) 988-835</p>
+            </div>
+            <div class="contact-item">
+                <h3>📍 Адрес</h3>
+                <p>г.Каракол, ул. Абдрахманова, 120</p>
+            </div>
+            <div class="contact-item">
+                <h3>🕒 Режим работы</h3>
+                <p>Пн–Сб: 09:00 – 21:00</p>
+            </div>
+        </div>
+        
+        <div class="contact-form">
+            <section id="price-calculator">
+                <h2>💰 Рассчитайте стоимость</h2>
+                <form id="calculator-form">
+                    <label><input type="checkbox" class="service" data-price="5000"> Кератиновое выпрямление – 5000c</label><br>
+                    <label><input type="checkbox" class="service" data-price="3000"> Маникюр – 3000c</label><br>
+                    <label><input type="checkbox" class="service" data-price="4000"> Педикюр – 4000c</label><br>
+                    <label><input type="checkbox" class="service" data-price="6000"> Ботокс для волос – 6000c</label><br>
+                    <label><input type="checkbox" class="service" data-price="2500"> Окрашивание бровей – 2500c</label><br>
+                    <label><input type="checkbox" id="discount" data-discount="10"> Использовать скидку 10%</label><br>
+            
+                    <h3>Итого: <span id="total-price">0</span>с</h3>
+                    <button id="openBookingForm">📅 Записаться</button>
+                    <button id="payButton">💳 Оплатить онлайн</butto>
+                </form>
+            </section>
+                  
+            <!-- Форма записи -->
+            <div id="bookingModal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Запись на услугу</h2>
+                    <form id="bookingForm">
+                        <label>Имя:</label>
+                        <input type="text" id="name" required>
+            
+                        <label>Телефон:</label>
+                        <input type="tel" id="phone" required>
+            
+                        <label>Дата и время:</label>
+                        <input type="datetime-local" id="datetime" required>
+            
+                        <button type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+            <h3>Оставить заявку</h3>
+            <form>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="email" placeholder="Ваш Email" required>
+                <textarea placeholder="Ваше сообщение" rows="5" required></textarea>
+                <button type="submit" class="btn-outline">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <section id="reviews">
+        <h2>✨ До и После</h2>
+            <div class="before-after-container">
+                <div class="before">
+                    <h3>До</h3>
+                    <input type="file" id="beforeUpload" accept="image/*">
+                    <img id="beforeImage" src="./343.jpg" alt="До">
+                </div>
+                <div class="after">
+                    <h3>После</h3>
+                    <input type="file" id="afterUpload" accept="image/*">
+                    <img id="afterImage" src="./344.jpg" alt="После">
+                </div>
+            </div>
+            <button id="saveComparison">💾 Сохранить</button>
+            <ul id="comparisonGallery"></ul>
+        <h2>Оставить отзыв</h2>
+        <form id="review-form">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="rating">Оценка (1-5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required>
+    
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment" required></textarea>
+            
+            <!-- Отзывы будут отображаться здесь -->
+        </ul>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p>&copy; 2025 Салон красоты "Salon". Все права защищены.</p>
+    </footer>
+
+</body>
+</html>
